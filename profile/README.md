@@ -39,7 +39,7 @@ The installer provisions everything and wires each service to Keycloak SSO autom
 | [lintune-dash](../lintune-dash) | Laravel tenant portal for end customers. Scoped to a single realm per session — users, groups, mailboxes, and Nextcloud access. |
 | [docker-lintune-admin](../docker-lintune-admin) | Docker image for `lintune-admin` (two-stage build, nginx + php-fpm). |
 | [docker-lintune-dash](../docker-lintune-dash) | Docker image for `lintune-dash`. |
-| [uptime-kuma](../uptime-kuma) | Fork of [Uptime Kuma](https://github.com/louislam/uptime-kuma) extended with a Lintune REST API (`/api/lintune/*`) for programmatic monitor management. Published as `stephancraane/uptime-kuma` on Docker Hub. |
+| [uptime-kuma](../uptime-kuma) | Fork of [Uptime Kuma](https://github.com/louislam/uptime-kuma) extended with a Lintune REST API (`/api/lintune/*`) for programmatic monitor management. Published as `ghcr.io/lintune/uptime-kuma` on Github Container Registry. |
 | [get.lintune.xyz](../get.lintune.xyz) | Bootstrap install script. Installs Docker, generates secrets, writes config files, and starts the Lintune stack via `docker compose`. |
 
 ---
