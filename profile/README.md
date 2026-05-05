@@ -35,10 +35,8 @@ The installer provisions everything and wires each service to Keycloak SSO autom
 
 | Repo | Description |
 |------|-------------|
-| [lintune-admin](../lintune-admin) | Laravel control plane for MSP operators. Handles realm provisioning, remote installs over SSH, Keycloak/Mailcow/Nextcloud integration, and service status monitoring. |
-| [lintune-dash](../lintune-dash) | Laravel tenant portal for end customers. Scoped to a single realm per session — users, groups, mailboxes, and Nextcloud access. |
-| [docker-lintune-admin](../docker-lintune-admin) | Docker image for `lintune-admin` (two-stage build, nginx + php-fpm). |
-| [docker-lintune-dash](../docker-lintune-dash) | Docker image for `lintune-dash`. |
+| [lintune-admin](../lintune-admin) | Laravel control plane for MSP operators. Handles realm provisioning, remote installs over SSH, Keycloak/Mailcow/Nextcloud integration, and service status monitoring. Docker support files live in `docker/`. |
+| [lintune-dash](../lintune-dash) | Laravel tenant portal for end customers. Scoped to a single realm per session — users, groups, mailboxes, and Nextcloud access. Docker support files live in `docker/`. |
 | [uptime-kuma](../uptime-kuma) | Fork of [Uptime Kuma](https://github.com/louislam/uptime-kuma) extended with a Lintune REST API (`/api/lintune/*`) for programmatic monitor management. Published as `ghcr.io/lintune/uptime-kuma` on Github Container Registry. |
 | [get.lintune.xyz](../get.lintune.xyz) | Bootstrap install script. Installs Docker, generates secrets, writes config files, and starts the Lintune stack via `docker compose`. |
 
