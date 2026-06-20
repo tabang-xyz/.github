@@ -1,0 +1,79 @@
+/* ============================================================
+   TABANG DESIGN TOKENS
+   One warm-stone foundation, one accent per product.
+   Brand colours are the logo colours.
+
+   Glyphs/logos are outlined SVGs — NO font needed for the marks.
+   The only typeface in the system is Hanken Grotesk (wordmark + UI),
+   imported below from Google Fonts (standard family; self-host if
+   you prefer).
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap');
+
+:root {
+  /* ---- Foundation · warm stone (shared by every product) ---- */
+  --stone-50:  #faf9f9;   /* canvas        */
+  --stone-100: #f5f5f4;   /* surface       */
+  --stone-200: #e7e5e4;   /* sunken        */
+  --stone-300: #d6d3d1;   /* hairline      */
+  --stone-400: #a8a29e;   /* muted         */
+  --stone-500: #78716c;   /* muted-strong  */
+  --stone-600: #57534e;   /* body          */
+  --stone-700: #44403c;   /* heading       */
+  --stone-800: #292524;   /* ink           */
+  --stone-900: #1c1917;   /* night         */
+
+  --cream: #f6f2ec;       /* warm off-white text on accents */
+
+  /* ---- Accents · one per product (the logo colour) ---- */
+  --accent-tabang: #dcb13b;   /* Mustard Gold — PARENT */
+  --accent-tugon:  #7f66bc;   /* Violet        */
+  --accent-daloy:  #2198a4;   /* Teal          */
+  --accent-hatid:  #479c6b;   /* Green         */
+  --accent-bayad:  #986539;   /* Caramel       */
+
+  /* ---- Text colour to place ON each accent ----
+     ▸ Tabang is the ONLY brand with BLACK (ink) text on its accent.
+     ▸ Every other product uses CREAM/white text on its accent,
+       in BOTH light and dark mode. See README. */
+  --on-tabang: var(--stone-900);   /* BLACK on gold  ← the exception */
+  --on-tugon:  var(--cream);       /* white on violet */
+  --on-daloy:  var(--cream);       /* white on teal   */
+  --on-hatid:  var(--cream);       /* white on green  */
+  --on-bayad:  var(--cream);       /* white on caramel */
+}
+
+/* ------------------------------------------------------------
+   Per-product theming.
+   Put data-brand="tugon" (etc.) on a root/section and use the
+   generic --accent / --on-accent vars beneath it.
+   ------------------------------------------------------------ */
+[data-brand="tabang"] { --accent: var(--accent-tabang); --on-accent: var(--on-tabang); }
+[data-brand="tugon"]  { --accent: var(--accent-tugon);  --on-accent: var(--on-tugon);  }
+[data-brand="daloy"]  { --accent: var(--accent-daloy);  --on-accent: var(--on-daloy);  }
+[data-brand="hatid"]  { --accent: var(--accent-hatid);  --on-accent: var(--on-hatid);  }
+[data-brand="bayad"]  { --accent: var(--accent-bayad);  --on-accent: var(--on-bayad);  }
+
+/* ---- Example component built only on the generic vars ---- */
+.btn-primary {
+  background: var(--accent);
+  color: var(--on-accent);        /* black for Tabang, white for the rest */
+  font-family: 'Hanken Grotesk', system-ui, sans-serif;
+  font-weight: 600;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+/* ---- Dark mode: foundation inverts, accents & the text rule stay ---- */
+[data-theme="dark"] {
+  --stone-50:  #1c1917;
+  --stone-100: #292524;
+  --stone-200: #44403c;
+  --stone-300: #57534e;
+  --stone-600: #d6d3d1;
+  --stone-800: #f5f5f4;
+  --stone-900: #fafafa;
+  /* --on-* are unchanged: Tabang still black on gold, others still white. */
+}
