@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Noto+Sans+Tagalog&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;}
+    html,body{margin:0;padding:0;}
+  </style>
+</helmet>
+
+<div style="min-height:100vh; background:oklch(0.965 0.01 75); font-family:'Hanken Grotesk',system-ui,sans-serif; color:oklch(0.27 0.012 60); -webkit-font-smoothing:antialiased;">
+  <div style="max-width:1080px; margin:0 auto; padding:0 48px;">
+
+    <!-- TOP BAR -->
+    <div style="display:flex; align-items:center; justify-content:space-between; padding:28px 0; border-bottom:1px solid oklch(0.9 0.01 75);">
+      <div style="display:flex; align-items:center; gap:11px;">
+        <div style="width:28px; height:28px; border-radius:22%; background:oklch(0.78 0.14 88); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:17px; line-height:1; color:oklch(0.975 0.012 80);">ᜆ</span></div>
+        <span style="font-weight:800; letter-spacing:-0.01em; font-size:15px;">tabang</span>
+      </div>
+      <span style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.58 0.02 60);">Brand System</span>
+    </div>
+
+    <!-- HERO -->
+    <div style="padding:96px 0 88px;">
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:oklch(0.6 0.13 85); margin-bottom:34px;">Tagalog &middot; to help, to aid</div>
+      <div style="display:flex; align-items:center; gap:30px; flex-wrap:wrap;">
+        <div style="width:108px; height:108px; border-radius:22%; background:oklch(0.78 0.14 88); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:64px; line-height:1; color:oklch(0.975 0.012 80);">ᜆ</span></div>
+        <div style="font-size:88px; font-weight:800; letter-spacing:-0.035em; line-height:0.9; color:oklch(0.27 0.012 60);">tabang</div>
+      </div>
+      <p style="max-width:580px; margin:40px 0 0; font-size:19px; line-height:1.55; color:oklch(0.46 0.015 62);">One parent brand, four services &mdash; written in <strong style="color:oklch(0.34 0.012 60); font-weight:700;">Baybayin</strong>, the pre-colonial script of the Philippines. ᜆ is <em>Ta</em>, the first sound of Tabang. Each service takes its own syllable in the same tile; colour and character tell them apart. The script <em>is</em> the symbol &mdash; no illustration required.</p>
+    </div>
+
+    <!-- ROOTED IN BAYBAYIN -->
+    <div style="padding:8px 0 88px; border-top:1px solid oklch(0.9 0.01 75);">
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.58 0.02 60); padding-top:34px; margin-bottom:40px;">Rooted in Baybayin</div>
+      <div style="display:grid; grid-template-columns:320px 1fr; gap:56px; align-items:center;">
+        <div style="background:oklch(0.995 0.004 80); border:1px solid oklch(0.9 0.01 75); border-radius:18px; padding:48px; display:flex; align-items:center; justify-content:center;">
+          <div style="position:relative; width:184px; height:184px;">
+            <div style="position:absolute; inset:0; border-radius:22%; background:oklch(0.78 0.14 88); display:flex; align-items:center; justify-content:center;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:110px; line-height:1; color:oklch(0.975 0.012 80);">ᜆ</span></div>
+            <div style="position:absolute; inset:0; opacity:{{ guidesOpacity }}; pointer-events:none;">
+              <div style="position:absolute; left:50%; top:0; bottom:0; width:1px; background:oklch(0.975 0.012 80 / 0.55);"></div>
+              <div style="position:absolute; top:50%; left:0; right:0; height:1px; background:oklch(0.975 0.012 80 / 0.55);"></div>
+              <div style="position:absolute; inset:14%; border:1px dashed oklch(0.975 0.012 80 / 0.6); border-radius:18%;"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p style="margin:0 0 22px; font-size:17px; line-height:1.6; color:oklch(0.4 0.015 62);">Baybayin is an indigenous Philippine writing system. Tabang&rsquo;s mark is simply its name&rsquo;s first syllable, set in a warm squircle. Vowels shift with a small mark called a <em>kudlit</em> &mdash; which is how Tabang (ᜆ, <em>Ta</em>) becomes Tugon (ᜆᜓ, <em>Tu</em>): the parent, grown into a service.</p>
+          <div style="display:flex; gap:10px;">
+            <div style="flex:1; text-align:center; padding:18px 8px; border:1px solid oklch(0.9 0.01 75); border-radius:12px;"><div style="font-family:'Noto Sans Tagalog',serif; font-size:40px; line-height:1; color:oklch(0.6 0.13 85);">ᜆ</div><div style="font-weight:700; font-size:14px; margin-top:10px;">Ta</div><div style="font-size:12px; color:oklch(0.55 0.015 62);">tabang</div></div>
+            <div style="flex:1; text-align:center; padding:18px 8px; border:1px solid oklch(0.9 0.01 75); border-radius:12px;"><div style="font-family:'Noto Sans Tagalog',serif; font-size:40px; line-height:1; color:oklch(0.575 0.13 295);">ᜆᜓ</div><div style="font-weight:700; font-size:14px; margin-top:10px;">Tu</div><div style="font-size:12px; color:oklch(0.55 0.015 62);">tugon</div></div>
+            <div style="flex:1; text-align:center; padding:18px 8px; border:1px solid oklch(0.9 0.01 75); border-radius:12px;"><div style="font-family:'Noto Sans Tagalog',serif; font-size:40px; line-height:1; color:oklch(0.625 0.10 205);">ᜇ</div><div style="font-weight:700; font-size:14px; margin-top:10px;">Da</div><div style="font-size:12px; color:oklch(0.55 0.015 62);">daloy</div></div>
+            <div style="flex:1; text-align:center; padding:18px 8px; border:1px solid oklch(0.9 0.01 75); border-radius:12px;"><div style="font-family:'Noto Sans Tagalog',serif; font-size:40px; line-height:1; color:oklch(0.63 0.115 155);">ᜑ</div><div style="font-weight:700; font-size:14px; margin-top:10px;">Ha</div><div style="font-size:12px; color:oklch(0.55 0.015 62);">hatid</div></div>
+            <div style="flex:1; text-align:center; padding:18px 8px; border:1px solid oklch(0.9 0.01 75); border-radius:12px;"><div style="font-family:'Noto Sans Tagalog',serif; font-size:40px; line-height:1; color:oklch(0.5 0.09 60);">ᜊ</div><div style="font-weight:700; font-size:14px; margin-top:10px;">Ba</div><div style="font-size:12px; color:oklch(0.55 0.015 62);">bayad</div></div>
+          </div>
+          <p style="margin:18px 0 0; font-size:13px; color:oklch(0.55 0.015 62);">Toggle the construction guides in Tweaks to see the centred grid &amp; safe area.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ONE FAMILY -->
+    <div style="padding:8px 0 88px; border-top:1px solid oklch(0.9 0.01 75);">
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.58 0.02 60); padding-top:34px; margin-bottom:8px;">One family</div>
+      <p style="margin:0 0 40px; font-size:18px; color:oklch(0.46 0.015 62); max-width:580px; line-height:1.5;">One script, one tile, five identities. Same silhouette and type throughout &mdash; the syllable and the colour do the talking.</p>
+
+      <!-- parent -->
+      <div style="display:flex; align-items:center; gap:20px; padding:24px 28px; background:oklch(0.995 0.004 80); border:1px solid oklch(0.9 0.01 75); border-radius:16px; margin-bottom:14px;">
+        <div style="width:64px; height:64px; border-radius:22%; background:oklch(0.78 0.14 88); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:38px; line-height:1; color:oklch(0.985 0.012 95);">ᜆ</span></div>
+        <div style="flex:1;">
+          <div style="font-size:22px; font-weight:800; letter-spacing:-0.02em;">tabang</div>
+          <div style="font-size:14px; color:oklch(0.5 0.015 62);">Parent brand &middot; the stack that helps</div>
+        </div>
+        <div style="font-size:11px; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; color:oklch(0.5 0.10 82); border:1px solid oklch(0.78 0.14 88); border-radius:999px; padding:5px 12px;">Parent</div>
+      </div>
+
+      <!-- services grid -->
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:14px;">
+        <!-- Tugon -->
+        <div style="background:oklch(0.995 0.004 80); border:1px solid oklch(0.9 0.01 75); border-radius:16px; padding:28px 22px; text-align:center;">
+          <div style="width:80px; height:80px; border-radius:22%; background:oklch(0.575 0.13 295); display:flex; align-items:center; justify-content:center; margin:0 auto 18px;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:48px; line-height:1; color:oklch(0.975 0.012 80);">ᜆᜓ</span></div>
+          <div style="font-size:20px; font-weight:800; letter-spacing:-0.02em;">tugon</div>
+          <div style="font-size:13px; color:oklch(0.575 0.13 295); font-weight:600; margin:3px 0 8px;">to respond &middot; Tu</div>
+          <div style="font-size:13px; color:oklch(0.5 0.015 62); line-height:1.4;">AI customer support</div>
+        </div>
+        <!-- Daloy -->
+        <div style="background:oklch(0.995 0.004 80); border:1px solid oklch(0.9 0.01 75); border-radius:16px; padding:28px 22px; text-align:center;">
+          <div style="width:80px; height:80px; border-radius:22%; background:oklch(0.625 0.10 205); display:flex; align-items:center; justify-content:center; margin:0 auto 18px;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:48px; line-height:1; color:oklch(0.975 0.012 80);">ᜇ</span></div>
+          <div style="font-size:20px; font-weight:800; letter-spacing:-0.02em;">daloy</div>
+          <div style="font-size:13px; color:oklch(0.625 0.10 205); font-weight:600; margin:3px 0 8px;">to flow &middot; Da</div>
+          <div style="font-size:13px; color:oklch(0.5 0.015 62); line-height:1.4;">Integration hub</div>
+        </div>
+        <!-- Hatid -->
+        <div style="background:oklch(0.995 0.004 80); border:1px solid oklch(0.9 0.01 75); border-radius:16px; padding:28px 22px; text-align:center;">
+          <div style="width:80px; height:80px; border-radius:22%; background:oklch(0.63 0.115 155); display:flex; align-items:center; justify-content:center; margin:0 auto 18px;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:48px; line-height:1; color:oklch(0.975 0.012 80);">ᜑ</span></div>
+          <div style="font-size:20px; font-weight:800; letter-spacing:-0.02em;">hatid</div>
+          <div style="font-size:13px; color:oklch(0.63 0.115 155); font-weight:600; margin:3px 0 8px;">to deliver &middot; Ha</div>
+          <div style="font-size:13px; color:oklch(0.5 0.015 62); line-height:1.4;">License gateway</div>
+        </div>
+        <!-- Bayad -->
+        <div style="background:oklch(0.995 0.004 80); border:1px solid oklch(0.9 0.01 75); border-radius:16px; padding:28px 22px; text-align:center;">
+          <div style="width:80px; height:80px; border-radius:22%; background:oklch(0.55 0.09 60); display:flex; align-items:center; justify-content:center; margin:0 auto 18px;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:48px; line-height:1; color:oklch(0.975 0.012 80);">ᜊ</span></div>
+          <div style="font-size:20px; font-weight:800; letter-spacing:-0.02em;">bayad</div>
+          <div style="font-size:13px; color:oklch(0.5 0.09 60); font-weight:600; margin:3px 0 8px;">payment &middot; Ba</div>
+          <div style="font-size:13px; color:oklch(0.5 0.015 62); line-height:1.4;">Billing portal</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOUNDATION -->
+    <div style="padding:8px 0 88px; border-top:1px solid oklch(0.9 0.01 75);">
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.58 0.02 60); padding-top:34px; margin-bottom:8px;">Foundation &middot; warm stone</div>
+      <p style="margin:0 0 36px; font-size:18px; color:oklch(0.46 0.015 62); max-width:610px; line-height:1.5;">One shared neutral skeleton for every product in the stack &mdash; the same cream &amp; stone already running in Tugon (Tailwind <code style="font-family:ui-monospace,monospace; font-size:0.84em; background:oklch(0.93 0.008 75); padding:1px 5px; border-radius:4px;">stone</code>). Surfaces, text and borders never change between services; only the accent does.</p>
+      <div style="display:grid; grid-template-columns:repeat(10,1fr); gap:8px;">
+        <div style="border:1px solid oklch(0.9 0.01 75); border-radius:10px; overflow:hidden; background:#fff;"><div style="height:62px; background:#FAFAF9; border-bottom:1px solid oklch(0.9 0.01 75);"></div><div style="padding:8px 7px;"><div style="font-weight:700; font-size:12px;">50</div><div style="font-size:9.5px; font-family:ui-monospace,monospace; color:oklch(0.55 0.015 62); margin-top:2px;">FAFAF9</div></div></div>
+        <div style="border:1px solid oklch(0.9 0.01 75); border-radius:10px; overflow:hidden; background:#fff;"><div style="height:62px; background:#F5F5F4; border-bottom:1px solid oklch(0.9 0.01 75);"></div><div style="padding:8px 7px;"><div style="font-weight:700; font-size:12px;">100</div><div style="font-size:9.5px; font-family:ui-monospace,monospace; color:oklch(0.55 0.015 62); margin-top:2px;">F5F5F4</div></div></div>
+        <div style="border:1px solid oklch(0.9 0.01 75); border-radius:10px; overflow:hidden; background:#fff;"><div style="height:62px; background:#E7E5E4;"></div><div style="padding:8px 7px;"><div style="font-weight:700; font-size:12px;">200</div><div style="font-size:9.5px; font-family:ui-monospace,monospace; color:oklch(0.55 0.015 62); margin-top:2px;">E7E5E4</div></div></div>
+        <div style="border:1px solid oklch(0.9 0.01 75); border-radius:10px; overflow:hidden; background:#fff;"><div style="height:62px; background:#D6D3D1;"></div><div style="padding:8px 7px;"><div style="font-weight:700; font-size:12px;">300</div><div style="font-size:9.5px; font-family:ui-monospace,monospace; color:oklch(0.55 0.015 62); margin-top:2px;">D6D3D1</div></div></div>
+        <div style="border:1px solid oklch(0.9 0.01 75); border-radius:10px; overflow:hidden; background:#fff;"><div style="height:62px; background:#A8A29E;"></div><div style="padding:8px 7px;"><div style="font-weight:700; font-size:12px;">400</div><div style="font-size:9.5px; font-family:ui-monospace,monospace; color:oklch(0.55 0.015 62); margin-top:2px;">A8A29E</div></div></div>
+        <div style="border:1px solid oklch(0.9 0.01 75); border-radius:10px; overflow:hidden; background:#fff;"><div style="height:62px; background:#78716C;"></div><div style="padding:8px 7px;"><div style="font-weight:700; font-size:12px;">500</div><div style="font-size:9.5px; font-family:ui-monospace,monospace; color:oklch(0.55 0.015 62); margin-top:2px;">78716C</div></div></div>
+        <div style="border:1px solid oklch(0.9 0.01 75); border-radius:10px; overflow:hidden; background:#fff;"><div style="height:62px; background:#57534E;"></div><div style="padding:8px 7px;"><div style="font-weight:700; font-size:12px;">600</div><div style="font-size:9.5px; font-family:ui-monospace,monospace; color:oklch(0.55 0.015 62); margin-top:2px;">57534E</div></div></div>
+        <div style="border:1px solid oklch(0.9 0.01 75); border-radius:10px; overflow:hidden; background:#fff;"><div style="height:62px; background:#44403C;"></div><div style="padding:8px 7px;"><div style="font-weight:700; font-size:12px;">700</div><div style="font-size:9.5px; font-family:ui-monospace,monospace; color:oklch(0.55 0.015 62); margin-top:2px;">44403C</div></div></div>
+        <div style="border:1px solid oklch(0.9 0.01 75); border-radius:10px; overflow:hidden; background:#fff;"><div style="height:62px; background:#292524;"></div><div style="padding:8px 7px;"><div style="font-weight:700; font-size:12px;">800</div><div style="font-size:9.5px; font-family:ui-monospace,monospace; color:oklch(0.55 0.015 62); margin-top:2px;">292524</div></div></div>
+        <div style="border:1px solid oklch(0.9 0.01 75); border-radius:10px; overflow:hidden; background:#fff;"><div style="height:62px; background:#1C1917;"></div><div style="padding:8px 7px;"><div style="font-weight:700; font-size:12px;">900</div><div style="font-size:9.5px; font-family:ui-monospace,monospace; color:oklch(0.55 0.015 62); margin-top:2px;">1C1917</div></div></div>
+      </div>
+      <p style="margin:20px 0 0; font-size:14px; color:oklch(0.5 0.015 62);">Canvas <b>50</b> &middot; Surface <b>100</b> &middot; Sunken <b>200</b> &middot; Hairline <b>300</b> &middot; Muted <b>400&ndash;500</b> &middot; Body <b>600</b> &middot; Ink <b>800</b> &middot; Night <b>900</b>.</p>
+    </div>
+
+    <!-- COLOUR -->
+    <div style="padding:8px 0 88px; border-top:1px solid oklch(0.9 0.01 75);">
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.58 0.02 60); padding-top:34px; margin-bottom:8px;">Accents &middot; one per service</div>
+      <p style="margin:0 0 36px; font-size:18px; color:oklch(0.46 0.015 62); max-width:610px; line-height:1.5;">On top of the shared stone, each product carries exactly one accent &mdash; its logo colour. It does the work of buttons, links, selection and focus, and nothing more.</p>
+      <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:14px;">
+        <div style="border-radius:14px; overflow:hidden; border:1px solid oklch(0.9 0.01 75);">
+          <div style="height:96px; background:oklch(0.78 0.14 88);"></div>
+          <div style="padding:14px;"><div style="font-weight:700; font-size:15px;">Tabang Gold</div><div style="font-size:11px; font-family:ui-monospace,monospace; color:oklch(0.5 0.015 62); margin-top:4px;">oklch(.78 .14 88)</div></div>
+        </div>
+        <div style="border-radius:14px; overflow:hidden; border:1px solid oklch(0.9 0.01 75);">
+          <div style="height:96px; background:oklch(0.575 0.13 295);"></div>
+          <div style="padding:14px;"><div style="font-weight:700; font-size:15px;">Tugon Violet</div><div style="font-size:11px; font-family:ui-monospace,monospace; color:oklch(0.5 0.015 62); margin-top:4px;">oklch(.575 .13 295)</div></div>
+        </div>
+        <div style="border-radius:14px; overflow:hidden; border:1px solid oklch(0.9 0.01 75);">
+          <div style="height:96px; background:oklch(0.625 0.10 205);"></div>
+          <div style="padding:14px;"><div style="font-weight:700; font-size:15px;">Daloy Teal</div><div style="font-size:11px; font-family:ui-monospace,monospace; color:oklch(0.5 0.015 62); margin-top:4px;">oklch(.625 .10 205)</div></div>
+        </div>
+        <div style="border-radius:14px; overflow:hidden; border:1px solid oklch(0.9 0.01 75);">
+          <div style="height:96px; background:oklch(0.63 0.115 155);"></div>
+          <div style="padding:14px;"><div style="font-weight:700; font-size:15px;">Hatid Green</div><div style="font-size:11px; font-family:ui-monospace,monospace; color:oklch(0.5 0.015 62); margin-top:4px;">oklch(.63 .115 155)</div></div>
+        </div>
+        <div style="border-radius:14px; overflow:hidden; border:1px solid oklch(0.9 0.01 75);">
+          <div style="height:96px; background:oklch(0.55 0.09 60);"></div>
+          <div style="padding:14px;"><div style="font-weight:700; font-size:15px;">Bayad Caramel</div><div style="font-size:11px; font-family:ui-monospace,monospace; color:oklch(0.5 0.015 62); margin-top:4px;">oklch(.55 .09 60)</div></div>
+        </div>
+      </div>
+      <p style="margin:22px 0 0; font-size:14px; color:oklch(0.5 0.015 62);">Accents share matched lightness &amp; chroma, varying only in hue &mdash; so the family stays balanced wherever the tiles sit side by side. Wordmarks always render in ink; colour lives only in the tile.</p>
+
+      <div style="margin-top:44px;">
+        <div style="font-size:13px; font-weight:700; color:oklch(0.5 0.015 62); margin-bottom:18px;">Same skeleton, one accent &mdash; swapped per service</div>
+
+        <!-- parent on web -->
+        <div style="margin-bottom:14px;">
+
+          <!-- Tabang -->
+          <div style="background:#FAFAF9; border:1px solid #E7E5E4; border-radius:14px; overflow:hidden;">
+            <div style="display:flex; align-items:center; gap:9px; padding:12px 14px; background:#fff; border-bottom:1px solid #EFEEEC;"><div style="width:26px; height:26px; border-radius:24%; background:oklch(0.78 0.14 88); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:15px; line-height:1; color:oklch(0.985 0.012 95);">ᜆ</span></div><span style="font-weight:800; font-size:14px; letter-spacing:-0.02em;">tabang</span><span style="margin-left:auto; font-size:10px; font-weight:700; color:#A8A29E; font-family:ui-monospace,monospace;"></span></div>
+            <div style="padding:14px; display:flex; flex-direction:column; gap:9px;">
+              <div style="display:flex; align-items:center; gap:8px; background:color-mix(in oklab, oklch(0.78 0.14 88) 24%, white); color:oklch(0.46 0.09 80); border-radius:8px; padding:8px 10px; font-weight:600; font-size:12px;"><span style="width:6px; height:6px; border-radius:50%; background:oklch(0.72 0.13 86); flex:none;"></span>The stack that helps</div>
+              <div style="background:#fff; border:1px solid #E7E5E4; border-radius:8px; padding:8px 10px; font-size:12px; color:#57534E;">4 services</div>
+              <button style="margin-top:2px; background:oklch(0.78 0.14 88); color:oklch(0.24 0.012 60); border:none; border-radius:8px; padding:9px 12px; font-weight:700; font-size:12px; cursor:pointer;">Get started</button>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:14px;">
+
+          <!-- Tugon -->
+          <div style="background:#FAFAF9; border:1px solid #E7E5E4; border-radius:14px; overflow:hidden;">
+            <div style="display:flex; align-items:center; gap:9px; padding:12px 14px; background:#fff; border-bottom:1px solid #EFEEEC;"><div style="width:26px; height:26px; border-radius:24%; background:oklch(0.575 0.13 295); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:15px; line-height:1; color:oklch(0.975 0.012 80);">ᜆᜓ</span></div><span style="font-weight:800; font-size:14px; letter-spacing:-0.02em;">tugon</span></div>
+            <div style="padding:14px; display:flex; flex-direction:column; gap:9px;">
+              <div style="display:flex; align-items:center; gap:8px; background:color-mix(in oklab, oklch(0.575 0.13 295) 13%, white); color:oklch(0.52 0.13 295); border-radius:8px; padding:8px 10px; font-weight:600; font-size:12px;"><span style="width:6px; height:6px; border-radius:50%; background:oklch(0.575 0.13 295); flex:none;"></span>Open ticket</div>
+              <div style="background:#fff; border:1px solid #E7E5E4; border-radius:8px; padding:8px 10px; font-size:12px; color:#57534E;">Resolved</div>
+              <button style="margin-top:2px; background:oklch(0.575 0.13 295); color:oklch(0.985 0.008 80); border:none; border-radius:8px; padding:9px 12px; font-weight:600; font-size:12px; cursor:pointer;">Generate reply</button>
+            </div>
+          </div>
+
+          <!-- Daloy -->
+          <div style="background:#FAFAF9; border:1px solid #E7E5E4; border-radius:14px; overflow:hidden;">
+            <div style="display:flex; align-items:center; gap:9px; padding:12px 14px; background:#fff; border-bottom:1px solid #EFEEEC;"><div style="width:26px; height:26px; border-radius:24%; background:oklch(0.625 0.10 205); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:15px; line-height:1; color:oklch(0.975 0.012 80);">ᜇ</span></div><span style="font-weight:800; font-size:14px; letter-spacing:-0.02em;">daloy</span></div>
+            <div style="padding:14px; display:flex; flex-direction:column; gap:9px;">
+              <div style="display:flex; align-items:center; gap:8px; background:color-mix(in oklab, oklch(0.625 0.10 205) 13%, white); color:oklch(0.5 0.10 205); border-radius:8px; padding:8px 10px; font-weight:600; font-size:12px;"><span style="width:6px; height:6px; border-radius:50%; background:oklch(0.625 0.10 205); flex:none;"></span>Messenger</div>
+              <div style="background:#fff; border:1px solid #E7E5E4; border-radius:8px; padding:8px 10px; font-size:12px; color:#57534E;">Email</div>
+              <button style="margin-top:2px; background:oklch(0.625 0.10 205); color:oklch(0.985 0.008 80); border:none; border-radius:8px; padding:9px 12px; font-weight:600; font-size:12px; cursor:pointer;">Add channel</button>
+            </div>
+          </div>
+
+          <!-- Hatid -->
+          <div style="background:#FAFAF9; border:1px solid #E7E5E4; border-radius:14px; overflow:hidden;">
+            <div style="display:flex; align-items:center; gap:9px; padding:12px 14px; background:#fff; border-bottom:1px solid #EFEEEC;"><div style="width:26px; height:26px; border-radius:24%; background:oklch(0.63 0.115 155); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:15px; line-height:1; color:oklch(0.975 0.012 80);">ᜑ</span></div><span style="font-weight:800; font-size:14px; letter-spacing:-0.02em;">hatid</span></div>
+            <div style="padding:14px; display:flex; flex-direction:column; gap:9px;">
+              <div style="display:flex; align-items:center; gap:8px; background:color-mix(in oklab, oklch(0.63 0.115 155) 13%, white); color:oklch(0.5 0.115 155); border-radius:8px; padding:8px 10px; font-weight:600; font-size:12px;"><span style="width:6px; height:6px; border-radius:50%; background:oklch(0.63 0.115 155); flex:none;"></span>Active</div>
+              <div style="background:#fff; border:1px solid #E7E5E4; border-radius:8px; padding:8px 10px; font-size:12px; color:#57534E;">Expired</div>
+              <button style="margin-top:2px; background:oklch(0.63 0.115 155); color:oklch(0.985 0.008 80); border:none; border-radius:8px; padding:9px 12px; font-weight:600; font-size:12px; cursor:pointer;">Issue license</button>
+            </div>
+          </div>
+
+          <!-- Bayad -->
+          <div style="background:#FAFAF9; border:1px solid #E7E5E4; border-radius:14px; overflow:hidden;">
+            <div style="display:flex; align-items:center; gap:9px; padding:12px 14px; background:#fff; border-bottom:1px solid #EFEEEC;"><div style="width:26px; height:26px; border-radius:24%; background:oklch(0.55 0.09 60); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:15px; line-height:1; color:oklch(0.975 0.012 80);">ᜊ</span></div><span style="font-weight:800; font-size:14px; letter-spacing:-0.02em;">bayad</span></div>
+            <div style="padding:14px; display:flex; flex-direction:column; gap:9px;">
+              <div style="display:flex; align-items:center; gap:8px; background:color-mix(in oklab, oklch(0.55 0.09 60) 16%, white); color:oklch(0.46 0.085 58); border-radius:8px; padding:8px 10px; font-weight:600; font-size:12px;"><span style="width:6px; height:6px; border-radius:50%; background:oklch(0.55 0.09 60); flex:none;"></span>Current bill</div>
+              <div style="background:#fff; border:1px solid #E7E5E4; border-radius:8px; padding:8px 10px; font-size:12px; color:#57534E;">Paid</div>
+              <button style="margin-top:2px; background:oklch(0.55 0.09 60); color:oklch(0.985 0.008 80); border:none; border-radius:8px; padding:9px 12px; font-weight:600; font-size:12px; cursor:pointer;">Pay now</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- IN USE -->
+    <div style="padding:8px 0 88px; border-top:1px solid oklch(0.9 0.01 75);">
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.58 0.02 60); padding-top:34px; margin-bottom:40px;">In use</div>
+
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:18px;">
+
+        <!-- favicon scale -->
+        <div style="background:oklch(0.995 0.004 80); border:1px solid oklch(0.9 0.01 75); border-radius:16px; padding:30px;">
+          <div style="font-size:13px; font-weight:700; color:oklch(0.5 0.015 62); margin-bottom:24px;">Favicon &amp; small scale</div>
+          <div style="display:flex; align-items:flex-end; gap:24px;">
+            <div style="width:48px; height:48px; border-radius:22%; background:oklch(0.78 0.14 88); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:29px; line-height:1; color:oklch(0.975 0.012 80);">ᜆ</span></div>
+            <div style="width:32px; height:32px; border-radius:22%; background:oklch(0.78 0.14 88); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:19px; line-height:1; color:oklch(0.975 0.012 80);">ᜆ</span></div>
+            <div style="width:24px; height:24px; border-radius:22%; background:oklch(0.78 0.14 88); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:14px; line-height:1; color:oklch(0.975 0.012 80);">ᜆ</span></div>
+            <div style="width:16px; height:16px; border-radius:24%; background:oklch(0.78 0.14 88); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:10px; line-height:1; color:oklch(0.975 0.012 80);">ᜆ</span></div>
+          </div>
+          <div style="display:flex; gap:24px; margin-top:10px; font-size:11px; font-family:ui-monospace,monospace; color:oklch(0.6 0.015 62);"><span style="width:48px;">48</span><span style="width:32px;">32</span><span style="width:24px;">24</span><span style="width:16px;">16</span></div>
+        </div>
+
+        <!-- org avatar -->
+        <div style="background:oklch(0.995 0.004 80); border:1px solid oklch(0.9 0.01 75); border-radius:16px; padding:30px;">
+          <div style="font-size:13px; font-weight:700; color:oklch(0.5 0.015 62); margin-bottom:24px;">GitHub org avatar</div>
+          <div style="display:flex; align-items:center; gap:16px;">
+            <div style="width:56px; height:56px; border-radius:50%; background:oklch(0.78 0.14 88); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:32px; line-height:1; color:oklch(0.975 0.012 80);">ᜆ</span></div>
+            <div>
+              <div style="font-weight:700; font-size:16px;">tabang-xyz</div>
+              <div style="font-size:13px; color:oklch(0.5 0.015 62);">5 repositories</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- app header (tweakable preview service) -->
+        <div style="grid-column:1 / -1; background:oklch(0.995 0.004 80); border:1px solid oklch(0.9 0.01 75); border-radius:16px; padding:30px;">
+          <div style="font-size:13px; font-weight:700; color:oklch(0.5 0.015 62); margin-bottom:22px;">App header &mdash; <span style="color:{{ previewAccent }};">{{ previewName }}</span> <span style="font-weight:500; color:oklch(0.62 0.015 62);">(switch service in Tweaks)</span></div>
+          <div style="border:1px solid oklch(0.91 0.01 75); border-radius:12px; overflow:hidden;">
+            <div style="display:flex; align-items:center; gap:14px; padding:14px 20px; background:oklch(0.985 0.005 78); border-bottom:1px solid oklch(0.92 0.01 75);">
+              <div style="width:36px; height:36px; border-radius:22%; background:{{ previewAccent }}; display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:22px; line-height:1; color:{{ previewGlyphColor }};">{{ previewGlyph }}</span></div>
+              <span style="font-weight:800; font-size:17px; letter-spacing:-0.02em;">{{ previewName }}</span>
+              <div style="flex:1;"></div>
+              <span style="font-size:13px; color:oklch(0.5 0.015 62);">{{ previewRole }}</span>
+              <div style="width:30px; height:30px; border-radius:50%; background:oklch(0.92 0.01 75);"></div>
+            </div>
+            <div style="padding:26px 20px; background:oklch(0.995 0.004 80); display:flex; gap:12px;">
+              <div style="width:120px; height:10px; border-radius:5px; background:oklch(0.91 0.01 75);"></div>
+              <div style="width:64px; height:10px; border-radius:5px; background:oklch(0.93 0.01 75);"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- reversed on dark -->
+        <div style="background:oklch(0.245 0.012 60); border:1px solid oklch(0.245 0.012 60); border-radius:16px; padding:30px;">
+          <div style="font-size:13px; font-weight:700; color:oklch(0.7 0.012 70); margin-bottom:24px;">On dark / reversed</div>
+          <div style="display:flex; align-items:center; gap:18px;">
+            <div style="width:56px; height:56px; border-radius:22%; background:oklch(0.975 0.012 80); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:32px; line-height:1; color:oklch(0.6 0.13 85);">ᜆ</span></div>
+            <div style="font-size:34px; font-weight:800; letter-spacing:-0.03em; color:oklch(0.97 0.008 80);">tabang</div>
+          </div>
+        </div>
+
+        <!-- monochrome -->
+        <div style="background:oklch(0.995 0.004 80); border:1px solid oklch(0.9 0.01 75); border-radius:16px; padding:30px;">
+          <div style="font-size:13px; font-weight:700; color:oklch(0.5 0.015 62); margin-bottom:24px;">One colour</div>
+          <div style="display:flex; align-items:center; gap:30px;">
+            <span style="font-family:'Noto Sans Tagalog',serif; font-size:52px; line-height:1; color:oklch(0.27 0.012 60);">ᜆ</span>
+            <span style="font-family:'Noto Sans Tagalog',serif; font-size:52px; line-height:1; color:oklch(0.27 0.012 60);">ᜊ</span>
+            <div style="font-size:14px; color:oklch(0.5 0.015 62); line-height:1.45;">Glyph only, single ink &mdash; for stamps, embroidery, watermarks, anywhere colour can&rsquo;t go.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DARK MODE -->
+    <div style="padding:8px 0 88px; border-top:1px solid oklch(0.9 0.01 75);">
+      <div style="font-size:12px; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:oklch(0.58 0.02 60); padding-top:34px; margin-bottom:8px;">Dark mode</div>
+      <p style="margin:0 0 36px; font-size:18px; color:oklch(0.46 0.015 62); max-width:610px; line-height:1.5;">The stone scale simply inverts &mdash; Canvas <b>900</b>, Surface <b>800</b>, Hairline <b>700</b>, Body <b>300</b>, Heading <b>50</b>. Accents lift a little for contrast; everything else is the same skeleton.</p>
+
+      <!-- Tugon dark app shell -->
+      <div style="background:#1C1917; border:1px solid #44403C; border-radius:16px; overflow:hidden; display:flex; height:312px; margin-bottom:18px;">
+        <div style="width:68px; background:#292524; border-right:1px solid #44403C; display:flex; flex-direction:column; align-items:center; padding:16px 0; gap:13px;">
+          <div style="width:36px; height:36px; border-radius:22%; background:oklch(0.575 0.13 295); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:21px; line-height:1; color:oklch(0.975 0.012 80);">ᜆᜓ</span></div>
+          <div style="width:36px; height:36px; border-radius:11px; background:#1C1917;"></div>
+          <div style="width:36px; height:36px; border-radius:11px; background:#1C1917;"></div>
+          <div style="flex:1;"></div>
+          <div style="width:30px; height:30px; border-radius:50%; background:#44403C;"></div>
+        </div>
+        <div style="flex:1; display:flex; flex-direction:column;">
+          <div style="display:flex; align-items:center; gap:12px; padding:15px 22px; border-bottom:1px solid #44403C;">
+            <span style="font-weight:800; color:#F5F5F4; font-size:16px; letter-spacing:-0.02em;">tugon</span>
+            <span style="font-size:12px; color:#A8A29E;">Tickets</span>
+            <div style="flex:1;"></div>
+            <div style="width:170px; height:30px; border-radius:8px; background:#292524; border:1px solid #44403C;"></div>
+          </div>
+          <div style="padding:16px 22px; display:flex; flex-direction:column; gap:10px;">
+            <div style="display:flex; align-items:center; gap:12px; background:color-mix(in oklab, oklch(0.575 0.13 295) 20%, #1C1917); border:1px solid color-mix(in oklab, oklch(0.575 0.13 295) 42%, #1C1917); border-radius:10px; padding:12px 14px;">
+              <span style="width:8px; height:8px; border-radius:50%; background:oklch(0.75 0.12 295); flex:none;"></span>
+              <div style="flex:1;"><div style="height:9px; width:44%; border-radius:5px; background:color-mix(in oklab, oklch(0.75 0.12 295) 65%, #1C1917);"></div><div style="height:7px; width:28%; border-radius:4px; background:#57534E; margin-top:8px;"></div></div>
+              <span style="font-size:11px; font-weight:700; color:oklch(0.78 0.11 295); background:color-mix(in oklab, oklch(0.575 0.13 295) 28%, #1C1917); padding:3px 9px; border-radius:99px;">INC&#8209;2401</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; background:#292524; border:1px solid #44403C; border-radius:10px; padding:12px 14px;">
+              <span style="width:8px; height:8px; border-radius:50%; background:#57534E; flex:none;"></span>
+              <div style="flex:1;"><div style="height:9px; width:52%; border-radius:5px; background:#44403C;"></div><div style="height:7px; width:32%; border-radius:4px; background:#3A3531; margin-top:8px;"></div></div>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; background:#292524; border:1px solid #44403C; border-radius:10px; padding:12px 14px;">
+              <span style="width:8px; height:8px; border-radius:50%; background:#57534E; flex:none;"></span>
+              <div style="flex:1;"><div style="height:9px; width:38%; border-radius:5px; background:#44403C;"></div><div style="height:7px; width:24%; border-radius:4px; background:#3A3531; margin-top:8px;"></div></div>
+            </div>
+          </div>
+          <div style="flex:1;"></div>
+          <div style="padding:14px 22px; border-top:1px solid #44403C; display:flex; gap:10px; align-items:center;">
+            <div style="flex:1; height:34px; border-radius:8px; background:#292524; border:1px solid #44403C;"></div>
+            <button style="background:oklch(0.575 0.13 295); color:#F8F7F5; border:none; border-radius:8px; padding:0 18px; height:34px; font-weight:600; font-size:13px; cursor:pointer;">Generate reply</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- dark parent -->
+      <div style="margin-bottom:14px;">
+
+        <!-- Tabang -->
+        <div style="background:#292524; border:1px solid #44403C; border-radius:14px; overflow:hidden;">
+          <div style="display:flex; align-items:center; gap:9px; padding:12px 14px; background:#1C1917; border-bottom:1px solid #44403C;"><div style="width:26px; height:26px; border-radius:24%; background:oklch(0.78 0.14 88); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:15px; line-height:1; color:oklch(0.985 0.012 95);">ᜆ</span></div><span style="font-weight:800; font-size:14px; letter-spacing:-0.02em; color:#F5F5F4;">tabang</span><span style="margin-left:auto; font-size:10px; font-weight:700; color:#78716C; font-family:ui-monospace,monospace;"></span></div>
+          <div style="padding:14px; display:flex; flex-direction:column; gap:9px;">
+            <div style="display:flex; align-items:center; gap:8px; background:color-mix(in oklab, oklch(0.78 0.14 88) 26%, #1C1917); color:oklch(0.84 0.12 88); border-radius:8px; padding:8px 10px; font-weight:600; font-size:12px;"><span style="width:6px; height:6px; border-radius:50%; background:oklch(0.8 0.13 88); flex:none;"></span>The stack that helps</div>
+            <div style="background:#1C1917; border:1px solid #44403C; border-radius:8px; padding:8px 10px; font-size:12px; color:#A8A29E;">4 services</div>
+            <button style="margin-top:2px; background:oklch(0.78 0.14 88); color:oklch(0.24 0.012 60); border:none; border-radius:8px; padding:9px 12px; font-weight:700; font-size:12px; cursor:pointer;">Get started</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- dark accent vignettes -->
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:14px;">
+
+        <!-- Tugon -->
+        <div style="background:#292524; border:1px solid #44403C; border-radius:14px; overflow:hidden;">
+          <div style="display:flex; align-items:center; gap:9px; padding:12px 14px; background:#1C1917; border-bottom:1px solid #44403C;"><div style="width:26px; height:26px; border-radius:24%; background:oklch(0.575 0.13 295); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:15px; line-height:1; color:oklch(0.975 0.012 80);">ᜆᜓ</span></div><span style="font-weight:800; font-size:14px; letter-spacing:-0.02em; color:#F5F5F4;">tugon</span></div>
+          <div style="padding:14px; display:flex; flex-direction:column; gap:9px;">
+            <div style="display:flex; align-items:center; gap:8px; background:color-mix(in oklab, oklch(0.575 0.13 295) 22%, #1C1917); color:oklch(0.78 0.11 295); border-radius:8px; padding:8px 10px; font-weight:600; font-size:12px;"><span style="width:6px; height:6px; border-radius:50%; background:oklch(0.75 0.12 295); flex:none;"></span>Open ticket</div>
+            <div style="background:#1C1917; border:1px solid #44403C; border-radius:8px; padding:8px 10px; font-size:12px; color:#A8A29E;">Resolved</div>
+            <button style="margin-top:2px; background:oklch(0.575 0.13 295); color:#F8F7F5; border:none; border-radius:8px; padding:9px 12px; font-weight:600; font-size:12px; cursor:pointer;">Generate reply</button>
+          </div>
+        </div>
+
+        <!-- Daloy -->
+        <div style="background:#292524; border:1px solid #44403C; border-radius:14px; overflow:hidden;">
+          <div style="display:flex; align-items:center; gap:9px; padding:12px 14px; background:#1C1917; border-bottom:1px solid #44403C;"><div style="width:26px; height:26px; border-radius:24%; background:oklch(0.625 0.10 205); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:15px; line-height:1; color:oklch(0.975 0.012 80);">ᜇ</span></div><span style="font-weight:800; font-size:14px; letter-spacing:-0.02em; color:#F5F5F4;">daloy</span></div>
+          <div style="padding:14px; display:flex; flex-direction:column; gap:9px;">
+            <div style="display:flex; align-items:center; gap:8px; background:color-mix(in oklab, oklch(0.625 0.10 205) 22%, #1C1917); color:oklch(0.80 0.09 205); border-radius:8px; padding:8px 10px; font-weight:600; font-size:12px;"><span style="width:6px; height:6px; border-radius:50%; background:oklch(0.76 0.09 205); flex:none;"></span>Messenger</div>
+            <div style="background:#1C1917; border:1px solid #44403C; border-radius:8px; padding:8px 10px; font-size:12px; color:#A8A29E;">Email</div>
+            <button style="margin-top:2px; background:oklch(0.625 0.10 205); color:#F8F7F5; border:none; border-radius:8px; padding:9px 12px; font-weight:600; font-size:12px; cursor:pointer;">Add channel</button>
+          </div>
+        </div>
+
+        <!-- Hatid -->
+        <div style="background:#292524; border:1px solid #44403C; border-radius:14px; overflow:hidden;">
+          <div style="display:flex; align-items:center; gap:9px; padding:12px 14px; background:#1C1917; border-bottom:1px solid #44403C;"><div style="width:26px; height:26px; border-radius:24%; background:oklch(0.63 0.115 155); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:15px; line-height:1; color:oklch(0.975 0.012 80);">ᜑ</span></div><span style="font-weight:800; font-size:14px; letter-spacing:-0.02em; color:#F5F5F4;">hatid</span></div>
+          <div style="padding:14px; display:flex; flex-direction:column; gap:9px;">
+            <div style="display:flex; align-items:center; gap:8px; background:color-mix(in oklab, oklch(0.63 0.115 155) 22%, #1C1917); color:oklch(0.80 0.10 155); border-radius:8px; padding:8px 10px; font-weight:600; font-size:12px;"><span style="width:6px; height:6px; border-radius:50%; background:oklch(0.76 0.10 155); flex:none;"></span>Active</div>
+            <div style="background:#1C1917; border:1px solid #44403C; border-radius:8px; padding:8px 10px; font-size:12px; color:#A8A29E;">Expired</div>
+            <button style="margin-top:2px; background:oklch(0.63 0.115 155); color:#F8F7F5; border:none; border-radius:8px; padding:9px 12px; font-weight:600; font-size:12px; cursor:pointer;">Issue license</button>
+          </div>
+        </div>
+
+        <!-- Bayad -->
+        <div style="background:#292524; border:1px solid #44403C; border-radius:14px; overflow:hidden;">
+          <div style="display:flex; align-items:center; gap:9px; padding:12px 14px; background:#1C1917; border-bottom:1px solid #44403C;"><div style="width:26px; height:26px; border-radius:24%; background:oklch(0.55 0.09 60); display:flex; align-items:center; justify-content:center; flex:none;"><span style="font-family:'Noto Sans Tagalog',serif; font-size:15px; line-height:1; color:oklch(0.975 0.012 80);">ᜊ</span></div><span style="font-weight:800; font-size:14px; letter-spacing:-0.02em; color:#F5F5F4;">bayad</span></div>
+          <div style="padding:14px; display:flex; flex-direction:column; gap:9px;">
+            <div style="display:flex; align-items:center; gap:8px; background:color-mix(in oklab, oklch(0.55 0.09 60) 30%, #1C1917); color:oklch(0.76 0.075 64); border-radius:8px; padding:8px 10px; font-weight:600; font-size:12px;"><span style="width:6px; height:6px; border-radius:50%; background:oklch(0.72 0.08 62); flex:none;"></span>Current bill</div>
+            <div style="background:#1C1917; border:1px solid #44403C; border-radius:8px; padding:8px 10px; font-size:12px; color:#A8A29E;">Paid</div>
+            <button style="margin-top:2px; background:oklch(0.55 0.09 60); color:oklch(0.985 0.008 80); border:none; border-radius:8px; padding:9px 12px; font-weight:600; font-size:12px; cursor:pointer;">Pay now</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div style="padding:34px 0 80px; border-top:1px solid oklch(0.9 0.01 75); display:flex; justify-content:space-between; align-items:center;">
+      <span style="font-size:13px; color:oklch(0.55 0.015 62);">Tabang stack &middot; tugon &middot; daloy &middot; hatid &middot; bayad</span>
+      <span style="font-size:13px; color:oklch(0.6 0.015 62); font-family:ui-monospace,monospace;">Hanken Grotesk &middot; Noto Sans Tagalog</span>
+    </div>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;previewService&quot;: {&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Tugon&quot;,&quot;options&quot;:[&quot;Tugon&quot;,&quot;Daloy&quot;,&quot;Hatid&quot;,&quot;Bayad&quot;],&quot;tsType&quot;:&quot;string&quot;},
+  &quot;showGuides&quot;: {&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;}
+}">
+class Component extends DCLogic {
+  renderVals() {
+    const services = {
+      Tugon: { accent: 'oklch(0.575 0.13 295)', glyph: 'ᜆᜓ', glyphColor: 'oklch(0.975 0.012 80)', role: 'AI customer support' },
+      Daloy: { accent: 'oklch(0.625 0.10 205)', glyph: 'ᜇ', glyphColor: 'oklch(0.975 0.012 80)', role: 'Integration hub' },
+      Hatid: { accent: 'oklch(0.63 0.115 155)', glyph: 'ᜑ', glyphColor: 'oklch(0.975 0.012 80)', role: 'License gateway' },
+      Bayad: { accent: 'oklch(0.55 0.09 60)', glyph: 'ᜊ', glyphColor: 'oklch(0.975 0.012 80)', role: 'Billing portal' },
+    };
+    const key = this.props.previewService || 'Tugon';
+    const s = services[key] || services.Tugon;
+    return {
+      previewAccent: s.accent,
+      previewGlyph: s.glyph,
+      previewGlyphColor: s.glyphColor,
+      previewName: key.toLowerCase(),
+      previewRole: s.role,
+      guidesOpacity: this.props.showGuides ? 1 : 0,
+    };
+  }
+}
+</script>
+</body>
+</html>
