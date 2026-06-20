@@ -1,0 +1,23 @@
+/* Tabang — typefaces
+   ------------------------------------------------------------------
+   Hanken Grotesk  → wordmarks, UI, body  (Google Fonts, OFL)
+   Noto Sans Tagalog → Baybayin glyphs in the marks (bundled, OFL)
+   ------------------------------------------------------------------ */
+
+/* Wordmark + UI typeface. Hanken Grotesk is a standard Google font;
+   load it from Google Fonts (below) or self-host the same family. */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap');
+
+/* Baybayin glyph font — bundled locally (Tagalog subset, U+1700–171F). */
+@font-face {
+  font-family: 'Noto Sans Tagalog';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./NotoSansTagalog-Baybayin.woff2') format('woff2');
+}
+
+:root {
+  --font-wordmark: 'Hanken Grotesk', system-ui, sans-serif;
+  --font-baybayin: 'Noto Sans Tagalog', serif;
+}
