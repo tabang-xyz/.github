@@ -1,4 +1,4 @@
-![Tabang Logo](../assets/logos/tabang.png)
+<img src="../assets/logos/tabang.png" alt="Tabang" width="200"/>
 
 # Tabang.xyz
 ## Customer support that actually responds.
