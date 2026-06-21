@@ -1,4 +1,4 @@
-![Tabang Logo](.github/assets/logos/tabang.png)
+![Tabang Logo](../assets/logos/tabang.png)
 
 # Tabang.xyz
 ## Customer support that actually responds.
