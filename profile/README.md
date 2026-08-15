@@ -1,5 +1,5 @@
 <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
-  <img src="../assets/tabang.svg" alt="Tabang" width="100" align="right">
+  <img src="../assets/tabang.svg" alt="Tabang" width="100">
   <span> <h1>Tabang.xyz</h1></span>
 </div>
 <div align="center">
